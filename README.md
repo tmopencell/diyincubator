@@ -7,13 +7,18 @@ These are usually found left over from universities or from second hand auctions
 
 ## 2. Get the computer parts
 You  need: 
- - One raspberry pi zero (or another model is fine as long as you have wifi). 
- - Three [DHT 11 senors]()
+ - Raspberry pi 3,4 or Zero (or another model is fine as long as you have wifi). 
+ - DHT 11 sensor
  - Raspicam
  - A 240V relay
  - (optional) usb webcamera
 
+ **Where to get them**
+If you are in the UK you can be lazy and use this [amazon shopping cart](http://amzn.eu/7rWGZtP) but I find [RS Components](https://uk.rs-online.com) to be the fastest and cheapest (free next day delivery and no minimum order). They stock older raspi versions (3+) which are perfect for this project as well as almost infinite amount of sensors and other electronics. 
+
 ## 3. Assemble
+
+I will talk about how I assembled my system but it is likely going to be different for you depending on what type of incubator oyur found. My incubator was a 
 
 ## 4. Code to run
 
