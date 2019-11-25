@@ -28,6 +28,7 @@ This project will require controlling GPIO pins on the Raspberry Pi. The layout 
 I will refer exclusively to the actual pin numbers on the device: 1-40
 
 Pin Layout
+
 |   |   |
 |---|---|
 |   |   |
@@ -45,7 +46,8 @@ Pin Layout
 Using a 5V relay like this requires three pins: 5V, GND, comm (send). 
 
 Pin order
-| Relay  |  Raspi |
+
+| Relay |  Raspi |
 |---|---|
 | Vcc |   |
 | GND |   |
