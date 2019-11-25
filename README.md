@@ -11,6 +11,7 @@ You  need:
  - DHT 11 sensor
  - Raspicam
  - A 240V relay
+ - An LED display
  - (optional) usb webcamera
 
  **Where to get them**
@@ -18,15 +19,74 @@ If you are in the UK you can be lazy and use this [amazon shopping cart](http://
 
 ## 3. Assemble
 
-I will talk about how I assembled my system but it is likely going to be different for you depending on what type of incubator oyur found. My incubator was a 
+I will talk about how I assembled my system but it is likely going to be different for you depending on what type of incubator you found. Hopefully this is useful! My incubator was a B & T UniTemp incubator
 
 ## 4. Code to run
+This project will require controlling GPIO pins on the Raspberry Pi. The layout of these pins is almost impossible to remember or understand. I recommend this outstanding resource: 
+**[Pi GPIO layout](https://pinout.xyz/pinout/pin3_gpio2)**
+
+I will refer exclusively to the actual pin numbers on the device: 1-40
+
+Pin Layout
+|   |   |
+|---|---|
+|   |   |
+|   |   |
+|   |   |
+|   |   |
+|   |   |
+|   |   |
+|   |   |
+|   |   |
+|   |   |
+
+**Running the Relay**
+
+Using a 5V relay like this requires three pins: 5V, GND, comm (send). 
+
+Pin order
+| Relay  |  Raspi |
+|---|---|
+| Vcc |   |
+| GND |   |
+| Com |   |
+
+**Running the LED display**
+
+Basically just this [blog](https://raspi.tv/2015/how-to-drive-a-7-segment-display-directly-on-raspberry-pi-in-python)
 
 **Creating a timelapse**
 
-**Running the DHT 11 and sending the data to a weapp**
+**Running the DHT 11**
 
-**Creating a temperature selection button**
+DHT11 is great because it is a 3 pin device, just like a relay you have a 5V, GND and comm (receive). 
+
+| DHT11  |  Raspi |
+|---|---|
+| Vcc |   |
+| GND |   |
+| Com |   |
+
+**Camera and light**
+
+I used a raspicam but you can also use a webcam if you prefer.
+
+```
+```
+
+**Record and send to the web**
+
+```
+
+## 5. References and Ideas
+
+Some really cool projects already exist. 
+
+The Pelling lab actually [built an incubator](https://www.pellinglab.net/single-post/diy/DIY-CO2-Incubator-Bioreactor-for-Mammalian-Cell-Culture) from scratch! It is even equiped with CO2 for mamalian cell culture. Really good idea, they just use an old strofoam box as the incubator housing!
+
+A group built an [orbital shaker](https://www.thingiverse.com/thing:2633507) which would fit nicely into an incubator
+
+Dan Chen's Lab have built a quick and easy design for a [single tube mixer](http://danchen.work/lab-shakers/), could be ideal for minipreps.. 
 
 
 
