@@ -83,19 +83,30 @@ I used a raspicam but you can also use a webcam if you prefer.
 
 ## 4. Assemble
 
-I will talk about how I assembled my system but it is likely going to be different for you depending on what type of incubator you found. Hopefully this is useful! My incubator was a B & T UniTemp incubator
+I will talk about how I assembled my system but it is likely going to be different for you depending on what type of incubator you found. Hopefully this is useful! My incubator was a B & T UniTemp incubator.
+
+**The B & T UniTemp Incubator: How it Works**
 
 ![Incubator Picture](images/incubator_front_shot.jpg)
 
 It was originally designed to have a temperature set by potentiometer and also has a few safety features. It has an additional backup adjustable cutout if the temeperature goes above a set threshold. It also has a built in thermal fuse which will break if the temperature goes above a particular temperature. It also has a hole in the top designed for a thermometer to go inside.
 
 ![Incubator External Thermometer](images/original_thermometer_external.jpg)
+The top of the unit has the thermometer sticking out and the original design involves setting your temperature using the controls and checking if the temperature is correct by manually pulling the thermometer out. 
 
 ![Incubator Internal Thermometer](images/internal original_thermometer.jpg)
+The thermometer just sits in the middle of the incubator. 
 
 ![Incubator Internal Circuits](images/full_internal_circuit_overview.jpg)
+The internal layout basically takes mains voltage (240V) and the potentiometers on the front of the instrument are variable resistors determining how much current reaches the internal heater. The box at the back of the instument contains the **relay**. The relay switches the current on or off and controls wether the heater on or off. I wanted to remove this device and use an external relay that I could control with a raspberry pi. 
 
 ![Incubator Thermal Fuse](images/thermal_fuse.jpg)
+The Thermal fuse. In my case this had blown and needed replacing. I chose one with a 13 amp current limit and 120 Celcius melt point. 
+
+![Incubator Relay Housing](images/pcb_housing_operation_diagram.jpg)
+The relay unit was an additional source of error. The relay would not be effectively switched on and would just come on/off with a rate determined by the vaiable resistor(s) on the unit. I tried to troubleshoot this and in the end decided that it was a hassle and that is why I replaced with an externally controlled 5V relay.  
+
+**Removing Relay and replacing with a Raspi controlled Unit**
 
 
 ## 5. References and Ideas
