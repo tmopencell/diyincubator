@@ -17,11 +17,11 @@ You  need:
  **Where to get them**
 If you are in the UK you can be lazy and use this [amazon shopping cart](http://amzn.eu/7rWGZtP) but I find [RS Components](https://uk.rs-online.com) to be the fastest and cheapest (free next day delivery and no minimum order). They stock older raspi versions (3+) which are perfect for this project as well as almost infinite amount of sensors and other electronics. 
 
-## 3. Assemble
 
-I will talk about how I assembled my system but it is likely going to be different for you depending on what type of incubator you found. Hopefully this is useful! My incubator was a B & T UniTemp incubator
+## 3. Code to run
 
-## 4. Code to run
+
+
 This project will require controlling GPIO pins on the Raspberry Pi. The layout of these pins is almost impossible to remember or understand. I recommend this outstanding resource: 
 **[Pi GPIO layout](https://pinout.xyz/pinout/pin3_gpio2)**
 
@@ -79,6 +79,23 @@ I used a raspicam but you can also use a webcam if you prefer.
 **Record and send to the web**
 
 ```
+
+## 4. Assemble
+
+I will talk about how I assembled my system but it is likely going to be different for you depending on what type of incubator you found. Hopefully this is useful! My incubator was a B & T UniTemp incubator
+
+![Incubator Picture](images/incubator_front_shot.jpg)
+
+It was originally designed to have a temperature set by potentiometer and also has a few safety features. It has an additional backup adjustable cutout if the temeperature goes above a set threshold. It also has a built in thermal fuse which will break if the temperature goes above a particular temperature. It also has a hole in the top designed for a thermometer to go inside.
+
+![Incubator External Thermometer](images/original_thermometer_external.jpg)
+
+![Incubator Internal Thermometer](images/internal original_thermometer.jpg)
+
+![Incubator Internal Circuits](images/full_internal_circuit_overview.jpg)
+
+![Incubator Thermal Fuse](images/thermal_fuse.jpg)
+
 
 ## 5. References and Ideas
 
